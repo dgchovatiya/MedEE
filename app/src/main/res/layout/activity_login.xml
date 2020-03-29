@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@mipmap/hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Hospital Finder"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:text="Choose Type:"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioGroup
+                                    android:id="@+id/login_radiao_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_20sdp"
+                                    android:layout_marginTop="@dimen/_20sdp">
+
+                                    <RadioButton
+                                        android:id="@+id/login_type_patient"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="#fff"
+                                        android:checked="true"
+                                        android:text="Patient"
+                                        android:textColor="#fff"
+                                        android:textStyle="bold" />
+
+                                    <RadioButton
+                                        android:id="@+id/login_type_hospital"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="#fff"
+                                        android:text="Hospital Receptiontist"
+                                        android:textColor="#fff"
+                                        android:textStyle="bold" />
+
+                                    <RadioButton
+                                        android:id="@+id/login_type_docter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="#fff"
+                                        android:text="Doctor"
+                                        android:textColor="#fff"
+                                        android:textStyle="bold" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="Email Id"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />-->
+
+                <EditText
+                    android:id="@+id/et_loginemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/emailprofile"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="example@xyz.com"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#EAECEE"
+                    android:textSize="@dimen/_13sdp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Password"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />-->
+
+
+                <EditText
+                    android:id="@+id/et_loginpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/passwordicon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="password"
+
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="#fff"
+                    android:textColorHint="#EAECEE"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <TextView
+                    android:id="@+id/txt_forgetpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_170sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Forget Password ?"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#656fc9"></View>
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_shape"
+                    android:text="Login"
+                    android:textColor="#fff" />
+
+
+                <TextView
+                    android:id="@+id/txt_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="Don't have an account ? Sign Up"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_65sdp"
+                    android:background="#fff"
+                    android:gravity="center"></View>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

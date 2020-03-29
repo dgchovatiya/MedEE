@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_pending_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/border4">
+
+    <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital name:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_ap_suc_hname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Mobilenumber:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_ap_suc_hmo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Docter Name:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_ap_suc_dname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_ap_suc_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointmnet Time:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_ap_suc_time_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

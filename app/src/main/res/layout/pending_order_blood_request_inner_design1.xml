@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_pending_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/border4">
+
+    <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital name:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_od_bd_pen_hname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Mobilenumber:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_od_bd_pen_hmo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordered Blood Group:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_od_bd_pen_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordered Blood Group Quantity:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_od_bd_pen_bq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordered Blood Date:"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pt_od_bd_pen_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_15sdp">
+
+
+
+            <Button
+                android:id="@+id/pt_od_bd_pen_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_170sdp"
+                android:text="Cancle"
+
+
+                android:background="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.mitul.hospitalfinder.Activity.Hospital.Hospital_Signup2_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#232a7c">
+
+            <ImageView
+                android:id="@+id/hs_lg1_edit_basic2_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Adress:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_Ho_ed_bd_buildingno"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/border"
+                        android:hint="Enter address"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Colony or Street:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_Ho_ed_bd_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Enter Colony or street"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Landmark:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_Ho_ed_bd_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Enter landmark"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Area:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_Ho_ed_bd_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Enter area"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                   <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Pincode:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_Ho_ed_bd_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Enter pincode"
+                        android:inputType="number"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />-->
+
+                    <Spinner
+                        android:id="@+id/sp_Ho_ed_bd_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/sp_Ho_ed_bd_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border" />
+                    <Spinner
+                        android:id="@+id/sp_Ho_ed_bd_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_next_ed_bd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

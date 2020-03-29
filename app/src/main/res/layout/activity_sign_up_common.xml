@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#232a7c">
+
+        <ImageView
+            android:id="@+id/signup_common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="Sign Up"
+            android:textColor="#ffff"
+            android:textSize="@dimen/_27sdp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="Choose Type:"
+                    android:textColor="#ffff"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/common_signup_rg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <RadioButton
+                                android:id="@+id/common_signup_type_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#ffff"
+                                android:checked="true"
+                                android:text="patient"
+                                android:textColor="#ffff" />
+
+                            <RadioButton
+                                android:id="@+id/common_signup_type_hospital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#ffff"
+                                android:text="Hospital Receptiontist"
+                                android:textColor="#ffff" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_common_signup_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border"
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+            <EditText
+                android:id="@+id/et_common_signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+            <EditText
+                android:id="@+id/et_common_signup_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_next_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

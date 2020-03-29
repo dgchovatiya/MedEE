@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    tools:context="com.example.mitul.hospitalfinder.Activity.ForgetPassword1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_hs_up_blood_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Enter Blood Group"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff" />
+        <TextView
+            android:id="@+id/txt_hs_up_blood_stock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:inputType="textCapCharacters"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Current Stock"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <EditText
+            android:id="@+id/et_hs_up_blood_stock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:hint="Enter Stock"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <Button
+                android:id="@+id/btn_hs_lg_bd_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btn_hs_lg_bd_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="Decrease" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

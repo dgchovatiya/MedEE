@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundimage"
+    tools:context="com.example.mitul.hospitalfinder.Activity.Hospital.Hospital_Signup3_Activity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6B000000">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pt_lg2_tool1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#232a7c">
+
+        <ImageView
+            android:id="@+id/hs_s3_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Medical Facilities"
+            android:textColor="#ffff"
+            android:textSize="@dimen/_30sdp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#ffff"></View>
+
+
+        <EditText
+            android:id="@+id/et_hs_su3_medicalfacilities"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:hint="Enter Medical Facilities"
+            android:background="@drawable/border1"
+            android:layout_margin="@dimen/_25sdp"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:textColor="#ffff"
+            android:padding="@dimen/_15sdp"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textColorHint="#ffff"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_4sdp"
+
+        >
+        <Button
+            android:id="@+id/btn_next_su3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:text="Next"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

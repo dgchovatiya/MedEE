@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mitul.hospitalfinder">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+    <application
+        android:name=".Model.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Pateint.Patient_Signup_Activity" />
+        <activity android:name=".Activity.SignUpCommonActivity" />
+        <activity android:name=".Activity.Pateint.SignUpSucessActivity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup1_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup2_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup3_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup4_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup5_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup6_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_SignupDocterDetails" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.Admin.AdminMainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Activity.Admin.Admin_sep_hospital_details" />
+        <activity android:name=".Activity.Admin.Admin_docterActivity" />
+        <activity
+            android:name=".Activity.Hospital.Hospital_Login1_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Activity.ForgetPassword1Activity" />
+        <activity android:name=".Activity.ForgetPasswordActivity" />
+        <activity android:name=".Activity.ForgetPassword2Activity" />
+        <activity
+            android:name=".Activity.Pateint.Patient_Login1_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Activity.Pateint.Patient_Login2_Acitvity" />
+        <activity
+            android:name=".Activity.Pateint.Patient_Login3_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_MedicalFacilities" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Hospital_Location" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_About" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_MedicalFacilities" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_About" />
+        <activity android:name=".Activity.Hospital.Hospital_EditBasic_Details_Activity1" />
+        <activity android:name=".Activity.Hospital.Hospital_EditBasic_Details_Activity2" />
+        <activity android:name=".Activity.Hospital.Hospital_Edit_Hospital_Image" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Docter1_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Docter1_UpdateActivity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Docter_New_Add_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Medicine1_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Medicine1_Update_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Medicine1_Add_New_Medicine_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Blood_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Blood_Update_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Blood_Add_new_Blood_Activity" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Medicine" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Blood" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Blood_Book_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Order_Blood_Activity" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Medicine_Book_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Order_Medicine_Activity" />
+        <activity android:name=".Activity.Pateint.Patient_Login2_BloodOrderActivity" />
+        <activity android:name=".Activity.Pateint.Patient_Login2_MedicineOrderActivity" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Docter_DetailsActivity" />
+        <activity android:name=".Activity.Pateint.Patient_Login3_Appointment_Book_Activity" />
+        <activity android:name=".Activity.Pateint.Patient_Login1_All_Appointment_Activity" />
+        <activity android:name=".Activity.Hospital.Hospital_Login1_Medicine_DescriptionActivity" />
+        <activity android:name=".Activity.Hospital.Hospital_Appointment_Activity" />
+        <activity android:name=".Activity.Doctor.Doctor_Login_Appointment_Activity" />
+        <activity
+            android:name=".Activity.Doctor.Doctor_Login_Activity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Activity.Hospital.Hospital_Signup_Set_Loctaion_Activity" />
+        <activity android:name=".Activity.Pateint.Edit_Profile_Activity"></activity>
+    </application>
+
+</manifest>

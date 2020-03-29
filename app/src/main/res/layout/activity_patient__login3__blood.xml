@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.mitul.hospitalfinder.Activity.Hospital.Hospital_Signup2_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000">
+        <TextView
+            android:id="@+id/txt_pt_lg3_blood_nofound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Blood Added"
+            android:gravity="center"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="#232a7c">
+
+                <ImageView
+                    android:id="@+id/pt_lg3_blood1_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <android.support.v4.widget.SwipeRefreshLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/pt_lg3_blood1_swipeContainer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/pt_lg3_res_blood1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_7sdp"></android.support.v7.widget.RecyclerView>
+
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

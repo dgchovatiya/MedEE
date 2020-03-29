@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.mitul.hospitalfinder.Activity.Hospital.Hospital_Signup1_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#232a7c">
+
+            <ImageView
+                android:id="@+id/hs_lg1_edit_basic1_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Hospital Name:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <EditText
+                        android:id="@+id/et_hs_ed_bd_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/border"
+                        android:hint="Name"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Owner Name:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                    <EditText
+                        android:id="@+id/et_hs_ed_bd_ow_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Ow_name"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Hospital Category:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <Spinner
+
+                        android:id="@+id/sp_hs_ed_bd_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"></Spinner>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Hospital Type:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <Spinner
+
+                        android:id="@+id/sp_hs_ed_bd_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"></Spinner>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Hospital Mobile Number:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+                    <EditText
+                        android:id="@+id/et_hs_ed_bd_mo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Mobile number"
+                        android:inputType="number"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Time:"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <EditText
+                        android:id="@+id/et_hs_ed_bd_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:hint="Time"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_next_ed_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

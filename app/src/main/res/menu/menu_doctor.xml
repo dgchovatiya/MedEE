@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/d_ap"
+            android:icon="@drawable/logout"
+            android:title="Appointment"
+            app:actionLayout="@layout/menu_counter"
+            />
+
+        <item
+            android:id="@+id/d_logout"
+            android:icon="@drawable/logout"
+            android:title="logout" />
+
+
+
+
+
+    </group>
+
+</menu>

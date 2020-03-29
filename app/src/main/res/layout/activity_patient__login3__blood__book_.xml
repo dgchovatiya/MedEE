@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.mitul.hospitalfinder.Activity.Hospital.Hospital_Signup2_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6B000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/pt_lg3_ob_tool1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="#232a7c">
+
+                <ImageView
+                    android:id="@+id/pt_lg3_order_blood_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_pt_lg3_blood_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_above="@id/et_pt_lg3_blood_quantity"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="Blood Group"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/et_pt_lg3_blood_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="Enter quantity"
+                        android:padding="@dimen/_10sdp"
+
+                        android:singleLine="true"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <TextView
+                        android:id="@+id/txt_pt_lg3_blood_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/et_pt_lg3_blood_quantity"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="*Hospital has 10 bottel "
+                        android:textColor="#fff" />
+
+
+                    <TextView
+                        android:id="@+id/et_pt_lg3_blood_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/txt_pt_lg3_blood_note"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint=" Date(YYYY/MM/DD)"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="#ffff"
+                        android:textColorHint="#ffff" />
+
+                    <Button
+                        android:id="@+id/btn_pt_lg3_blood_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_pt_lg3_blood_date"
+                        android:text="SELECT DATE"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_pt_lg3_blood_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Book Now"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hs_lg1_docter"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Doctor" />
+
+        <item
+            android:id="@+id/hs_lg1_medicine"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Medicine" />
+
+        <item
+            android:id="@+id/hs_lg1_blood"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Blood" />
+
+        <item
+            android:id="@+id/hs_lg1_appointmnet"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Appointment"
+            app:actionLayout="@layout/menu_counter"
+            />
+
+        <item
+            android:id="@+id/hs_lg1_blood_order"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Blood Order"
+            app:actionLayout="@layout/menu_counter"
+            />
+        <item
+            android:id="@+id/hs_lg1_medicine_order"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Medicine Order"
+            app:actionLayout="@layout/menu_counter"
+            />
+
+        <item
+            android:id="@+id/hs_lg1_m_mf"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Medical Facilities" />
+
+        <item
+            android:id="@+id/hs_lg1_m_about"
+            android:icon="@mipmap/ic_launcher"
+            android:title="About" />
+        <item
+            android:id="@+id/hs_lg1_editProfile"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/hs_lg1_logout"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/pt_lg3_docter"
+            android:icon="@drawable/ic_appointment"
+            android:title="Doctor" />
+
+        <item
+            android:id="@+id/pt_lg3_medicine"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Medicine" />
+
+        <item
+        android:id="@+id/pt_lg3_Blood"
+        android:icon="@drawable/logout"
+        android:title="Blood" />
+
+        <item
+            android:id="@+id/pt_lg3_mf"
+            android:icon="@drawable/logout"
+            android:title="Medical Facilities" />
+
+        <item
+            android:id="@+id/pt_lg3_about"
+            android:icon="@drawable/logout"
+            android:title="About Hospital" />
+
+    </group>
+
+
+</menu>
